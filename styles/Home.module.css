@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  background-color: beige;
+  background-color: #fef9ea;
   height: 5rem;
   padding: calc(1rem * 0.5) calc(1rem * 1);
 }
@@ -49,6 +49,46 @@
   color: #4e4e4e;
 }
 
+.hero {
+  background-color: #fef9ea;
+  text-align: center;
+  padding: 4.5rem 2rem;
+}
+
+.title {
+  margin: 0;
+  font-family: 'Oooh Baby', cursive;
+  line-height: 1.5;
+  font-size: 12rem;
+  color: #1de5de;
+}
+
+.subTitle {
+  color: #4e4e4e;
+  margin-top: 0.5rem;
+}
+
+.heroButtons {
+  margin-top: 1.5rem;
+}
+
+.styledButton {
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  margin: 0.25em 0;
+  padding: 0.75em 1.5em;
+  position: relative;
+  transition: none;
+  background-color: #22d9d3;
+  color: #ffffff;
+}
+
+.styledButton:hover {
+  background-color: #1abcb7;
+}
+
 .container {
   padding: 0 2rem;
 }
@@ -64,6 +104,7 @@
 }
 
 .footer {
+  background-color: #1de5de38;
   display: flex;
   flex: 1;
   padding: 2rem 0;
@@ -88,12 +129,6 @@
 .title a:focus,
 .title a:active {
   text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
 }
 
 .title,

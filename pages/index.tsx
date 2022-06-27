@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import classNames from 'classnames'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
@@ -36,7 +37,7 @@ const Home: NextPage = () => {
             </a>
             <a
               className={classNames([styles.navbarItem, styles.navbarLink])}
-              href="https://nextjs.org/learn"
+              href="https://twitter.com/"
             >
               🐤 Tweet
             </a>
@@ -44,14 +45,17 @@ const Home: NextPage = () => {
         </div>
       </nav>
 
-      <main className={styles.main}>
-        <section>
-          <h1 className={styles.title}>breeze</h1>
-          <p className={styles.description}>
-            An easy-to-use AutoML SaaS Platform
-          </p>
-        </section>
+      <div className={classNames([styles.hero])}>
+        <h1 className={styles.title}>breeze</h1>
+        <h2 className={styles.subTitle}>An easy-to-use AutoML SaaS Platform</h2>
+        <div className={styles.heroButtons}>
+          <Link href="./">
+            <a className={styles.styledButton}>👉🏻 Get Started</a>
+          </Link>
+        </div>
+      </div>
 
+      <main className={styles.main}>
         <div className={styles.container}>
           <section>
             <h2>feature section #1</h2>
@@ -71,7 +75,9 @@ const Home: NextPage = () => {
         </div>
       </main>
 
-      <footer className={styles.footer}>Made with ❤️ in GDDi</footer>
+      <footer className={styles.footer}>
+        Made with ❤️ in Nanshan, Shenzhen
+      </footer>
     </>
   )
 }
