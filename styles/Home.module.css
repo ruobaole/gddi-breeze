@@ -94,13 +94,60 @@
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
+  /* min-height: 100vh; */
+  margin: 0px 60px 0px 60px;
+  padding: 1rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* align-items: center; */
+}
+
+.featureSection {
+  padding: 90px 0px 90px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
+  max-width: 1280px;
+}
+
+.featureSectionDescription {
+  color: #4e4e4e;
+  width: 35%;
+}
+
+.featureSectionDescription > h2 {
+  margin-top: 0px;
+}
+
+.featureSectionDescription > p {
+  margin: 0 0 1.25rem;
+  font-size: 1.1rem;
+  color: #828282;
+  line-height: 1.5;
+}
+
+.featureSectionLink {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1abcb7;
+}
+
+.featureSectionImageWrapper {
+  width: 60%;
+  border-width: 1px;
+  border-style: solid;
+  border-image: initial;
+  border-color: #828282;
+  height: 420px;
+  border-radius: 0.375rem;
+  overflow: hidden;
+  order: 0;
+  /* box-shadow: rgb(26 25 43 / 2%) 0px 2px 2px, rgb(26 25 43 / 2%) 0px 12.5px 10px,
+    rgb(26 25 43 / 2%) 0px 22.3px 17.9px, rgb(26 25 43 / 3%) 0px 41.8px 33.4px,
+    rgb(26 25 43 / 2%) 0px 100px 80px; */
 }
 
 .footer {
@@ -129,17 +176,6 @@
 .title a:focus,
 .title a:active {
   text-decoration: underline;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
 }
 
 .code {

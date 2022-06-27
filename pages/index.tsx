@@ -56,23 +56,51 @@ const Home: NextPage = () => {
       </div>
 
       <main className={styles.main}>
-        <div className={styles.container}>
-          <section>
+        <section className={styles.featureSection}>
+          <div className={styles.featureSectionDescription}>
             <h2>feature section #1</h2>
-            <p className={styles.description}>
-              Describe feature #1 in some concise languages
+            <p>
+              Describe feature #1 in some concise languages Describe feature #1
+              in some concise languagesDescribe feature #1 in some concise
+              languagesDescribe feature #1 in some concise languagesDescribe
+              feature #1 in some concise languages
             </p>
-            <a href="https://nextjs.org/learn">Documentation</a>
-          </section>
+            <a
+              className={styles.featureSectionLink}
+              href="https://nextjs.org/learn"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Documentation
+            </a>
+          </div>
+          <div className={styles.featureSectionImageWrapper}>
+            screenshot or inline component for the freature
+          </div>
+        </section>
 
-          <section>
+        <section className={styles.featureSection}>
+          <div className={styles.featureSectionImageWrapper}>
+            screenshot or inline component for the freature
+          </div>
+          <div className={styles.featureSectionDescription}>
             <h2>feature section #2</h2>
-            <p className={styles.description}>
-              Describe feature #2 briefly in some concise languages
+            <p>
+              Describe feature #2 in some concise languages Describe feature #1
+              in some concise languagesDescribe feature #1 in some concise
+              languagesDescribe feature #1 in some concise languagesDescribe
+              feature #1 in some concise languages
             </p>
-            <a href="https://nextjs.org/learn">Documentation</a>
-          </section>
-        </div>
+            <a
+              className={styles.featureSectionLink}
+              href="https://nextjs.org/learn"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Documentation
+            </a>
+          </div>
+        </section>
       </main>
 
       <footer className={styles.footer}>
