@@ -1,6 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
+import { useCallback } from 'react'
+import { MenuButton } from './../components/MenuButton'
 
 interface HomeFeatureSectionProps {
   title: string
@@ -43,6 +45,32 @@ const HomeFeatureSection = ({
 }
 
 const Home: NextPage = () => {
+  const renderMenuContent = useCallback(() => {
+    return (
+      <ul className="flex flex-col h-full flex-1 items-center justify-center text-gray-200 text-3xl font-bold">
+        <li className="my-8">
+          <a
+            className="inline-block"
+            href="https://github.com/ruobaole/gddi-breeze"
+          >
+            <span>🐙 </span>
+            <span className="underline decoration-pink-500 decoration-4">
+              GitHub
+            </span>
+          </a>
+        </li>
+        <li className="my-8">
+          <a className="inline-block" href="https://twitter.com/">
+            <span>🐤 </span>
+            <span className="underline decoration-pink-500 decoration-4">
+              Tweet
+            </span>
+          </a>
+        </li>
+      </ul>
+    )
+  }, [])
+
   return (
     <div>
       <Head>
@@ -55,8 +83,16 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <nav className="flex bg-cyan-50 h-20 px-4 py-2 sticky top-0 z-50 select-none">
-        <div className="flex w-full flex-wrap justify-between">
+      <nav className="flex bg-cyan-50 h-20 px-2 md:px-4 py-2 sticky top-0 z-50 select-none">
+        <div className="flex items-center w-full flex-wrap justify-between">
+          <div className="mr-2 md:hidden">
+            <MenuButton
+              bgClassname="bg-cyan-500"
+              closeTWClassname="text-gray-200 text-4xl"
+              hamburgerTWClassname="text-gray-600 text-2xl"
+              renderContent={renderMenuContent}
+            />
+          </div>
           <div className="flex items-center flex-grow">
             <a
               className="flex text-2xl items-center text-gray-800 mr-7"
